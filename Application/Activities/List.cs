@@ -23,7 +23,6 @@ namespace Application.Activities
             public Handler(DataContext context)
             {
                 _context = context;
-                this.logger = logger;
             }
 
             public async Task<List<Activity>> Handle(Query request, CancellationToken cancellationToken)
